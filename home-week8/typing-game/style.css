@@ -1,0 +1,102 @@
+body {
+font-family: Arial, sans-serif;
+display: flex;
+justify-content: center;
+align-items: center;
+height: 100vh;
+margin: 0;
+background-image: url('./devil.png');
+background-size: cover; /* 이미지가 화면 전체를 덮도록 조정 */
+background-position: center; /* 이미지가 중앙에 위치하도록 조정 */
+background-color: #f0f8ff;
+}
+
+.game-container {
+text-align: center;
+background-color: #8cefb0;
+padding: 20px;
+border-radius: 10px;
+box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+}
+
+h1 {
+color: #2c3e50;
+}
+
+#quote {
+font-size: 24px;
+margin: 20px 0;
+color: #3498db;
+}
+
+#typed-value {
+padding: 10px;
+font-size: 16px;
+border: 2px solid #3498db;
+border-radius: 5px;
+margin-bottom: 20px;
+}
+
+#start {
+background-color: #3498db;
+color: white;
+padding: 10px 20px;
+font-size: 16px;
+border: none;
+border-radius: 5px;
+cursor: pointer;
+}
+
+#start:disabled {
+background-color: #95a5a6;
+cursor: not-allowed;
+}
+
+#message {
+margin-top: 20px;
+font-size: 18px;
+color: #27ae60;
+}
+
+.highlight {
+background-color: yellow;
+}
+
+.error {
+background-color: lightcoral;
+border: 1px solid red;
+}
+
+/* 추가 css */
+
+.modal {
+    display: none;
+    position: fixed;
+    z-index: 1;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5);
+  }
+  
+  .modal-content {
+    background-color: #fff;
+    margin: 15% auto;
+    padding: 20px;
+    border-radius: 10px;
+    width: 80%;
+    max-width: 500px;
+    text-align: center;
+  }
+  
+  .close-btn {
+    float: right;
+    font-size: 24px;
+    cursor: pointer;
+  }
+  
+  #typed-value.active {
+    background-color: #e0f7fa;
+    border-color: #00695c;
+  }
